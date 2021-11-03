@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 6px;
+    grid: "a a b b b c c d e g g"
+          "f f f f h i j d e g g"
+          "f f f f h i j d k k n"
+          "f f f f h l l d k k n"
+          "f f f f o o q d m m n"
+          "p p r r s s q d . . ."
+          "p p r r . . q t t t t";
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+}
+#div1{
+	grid-area: a;
+    background-image: url(images/01.jpg);
+    background-size: cover;
+}
+#div2{
+	grid-area: b;
+    background-image: url(images/02.jpg);
+    background-size: cover;
+}
+#div3{
+	grid-area: c;
+    background-image: url(images/03.jpg);
+    background-size: cover;
+}
+#div4{
+	grid-area: d;
+    background-image: url(images/04.jpg);
+    background-size: cover;
+}
+#div5{
+	grid-area: e;
+    background-image: url(images/05.jpg);
+    background-size: cover;
+}
+#div6{
+	grid-area: f;
+    background-image: url(images/06.jpg);
+    background-size: cover;
+}
+#div7{
+	grid-area: g;
+    background-image: url(images/07.jpg);
+    background-size: cover;
+}
+#div8{
+	grid-area: h;
+    background-image: url(images/08.jpg);
+    background-size: cover;
+}
+#div9{
+	grid-area: i;
+    background-image: url(images/09.jpg);
+    background-size: cover;
+}
+#div10{
+	grid-area: j;
+    background-image: url(images/10.jpg);
+    background-size: cover;
+}
+#div11{
+	grid-area: k;
+    background-image: url(images/11.jpg);
+    background-size: cover;
+}
+#div12{
+	grid-area: l;
+    background-image: url(images/12.jpg);
+    background-size: cover;
+}
+#div13{
+	grid-area: m;
+    background-image: url(images/13.jpg);
+    background-size: cover;
+}
+#div14{
+	grid-area: n;
+    background-image: url(images/14.jpg);
+    background-size: cover;
+}
+#div15{
+	grid-area: o;
+    background-image: url(images/15.jpg);
+    background-size: cover;
+}
+#div16{
+	grid-area: p;
+    background-image: url(images/16.jpg);
+    background-size: cover;
+}
+#div17{
+	grid-area: q;
+    background-image: url(images/17.jpg);
+    background-size: cover;
+}
+#div18{
+	grid-area: r;
+    background-image: url(images/18.jpg);
+    background-size: cover;
+}
+#div19{
+	grid-area: s;
+    background-image: url(images/19.jpg);
+    background-size: cover;
+}
+#div20{
+	grid-area: t;
+    background-image: url(images/20.jpg);
+    background-size: cover;
+}
+@media (max-width: 900px) {
+    .grid-container{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid: "a a b b b c c h"
+              "e f f f f g g h"
+              "e f f f f g g h"
+              "i f f f f j d h"
+              "i f f f f j d h"
+              "i k k l l m m h"
+              "n k k l l p p q"
+              "n o o s s p p q"
+              "n o o t t t t q";
+        }
+    #div18{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    #div18{
+        display: block;
+    }
+    .grid-container{
+        background-color: gray;
+        grid: 
+        "a a b b b"
+        "c c e i h"
+        "g g e i h"
+        "g g e j h"
+        "d . e j ."
+        "d . e k k"
+        "o o e k k"
+        "f f f f n"
+        "f f f f n"
+        "f f f f n"
+        "f f f f q"
+        "m m l l q"
+        "m m l l q"
+        "p p r r q"
+        "p p r r ."
+        "s s . . ."
+        "t t t t .";
+    }
+}
